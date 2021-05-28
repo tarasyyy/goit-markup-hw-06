@@ -32,16 +32,13 @@ body {
   margin-right: auto;
 }
 
-.head_cont .container {
+.header .container {
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.head_cont_b {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .foot_cont .container {
@@ -683,10 +680,8 @@ line. {
 .btn_m_close {
   position: absolute;
   display: flex;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   background: var(--white_title_tc);
@@ -729,25 +724,12 @@ line. {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .checkbox {
-  margin: 20px auto 30px auto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--btn_bg);
-} */
-
 .modal_label {
   display: block;
   position: relative;
   font-style: normal;
   font-weight: normal;
-  padding-bottom: 6px;
+  margin-bottom: 6px;
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -790,6 +772,10 @@ line. {
   background-position: center;
   background-image: url(../images/vector2.svg);
 
+}
+
+.checkbox:hover + .checkbox_label::before {
+  background-color: var(--btn_bg);
 }
 
 .modal_item {
@@ -840,6 +826,15 @@ line. {
 .modal_input:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--black_title_tc) ;
   -webkit-box-shadow: 0 0 0px 1000px var(--white_bg) inset;
+}
+
+.modal_textarea {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.1px;
+  letter-spacing: 0.01em;
 }
 
 .modal_textarea {

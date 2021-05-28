@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Шапка страницы -->
-    <header class="head_cont white_bg head_cont_b">
+    <header class="header white_bg">
         <div class="container">
             <!-- Навигация на другие страницы -->
             <nav class="nav">
@@ -322,15 +322,13 @@
     <!-- Подвал страницы -->
     <footer class="foot_cont dark_bg">
         <div class="container">
-            <a name="contacts"></a>
             <ul class="footer_list list">
                 <li class="footer_list_item">
                     <a class="logo_f" href="./index.html"><span class="logo">Web</span>Studio</a>
                     <!-- контакты -->
                     <address class="address">
                         <ul class="list">
-                            <li class="menu_f"><a class="link address_white" href="https://goo.gl/maps/WUmFvbnY2nkJRH4h6" target="_blank
-                                        ">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="menu_f"><a class="link address_white" href="https://goo.gl/maps/WUmFvbnY2nkJRH4h6" target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
                             <li class="menu_f"><a class="link address_light" href="mailto:info@example.com">info@example.com</a></li>
                             <li class="menu_f"><a class="link address_light" href="tel:+380991111111">+38 099 111 11 11</a></li>
                         </ul>
@@ -371,7 +369,7 @@
                 </li>
                 <li>
                     <h3 class="add">Подпишитесь на рассылку</h3>
-                    <form action="" class="form">
+                    <form class="form">
                         <input type="email" class="mailing" name="mailing_name" placeholder="E-mail" autocomplete="off">
                         <button class="btn2" type="submit">Подписаться
                             <svg class="telega_icons_svg">
@@ -380,9 +378,7 @@
                         </button>
                     </form>
                 </li>
-                </ul>
             </ul>
-            
         </div>
     </footer>
 
@@ -394,40 +390,40 @@
                 </svg>
             </button>
             <p class="modal_title">Оставьте свои данные, мы вам перезвоним</p>
-            <form action="" class="form_footer">
+            <form class="form_footer">
                 <label for="username" class="modal_label">
                     Имя
-                    <div class="modal_item">
+                    <span class="modal_item">
                         <input type="text" class="modal_input" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" id="username">
                         <svg class="modal_icons_svg">
                             <use href="./images/icons/sprite.svg#icon-person"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label for="telname" class="modal_label">
                     Телефон
-                    <div class="modal_item">
+                    <span class="modal_item">
                         <input type="tel" class="modal_input" pattern="[0-9]{10}" id="telname">
                         <svg class="modal_icons_svg">
                             <use href="./images/icons/sprite.svg#icon-phone"></use>
                         </svg>
-                    </div> 
+                    </span> 
                 </label>
                 <label for="emailname" class="modal_label">
                     Почта
-                    <div class="modal_item">
+                    <span class="modal_item">
                         <input type="email" class="modal_input" id="emailname">
                         <svg class="modal_icons_svg">
                             <use href="./images/icons/sprite.svg#icon-email"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label for="commentname" class="modal_label_text">
-                    Комментарий
+                    <span class="modal_textarea_span">Комментарий</span> 
                     <textarea name="comment" id="commentname"  class="modal_textarea" placeholder="Введите текст"></textarea>
                 </label>
                 <input type="checkbox" class="checkbox visually-hidden" id="checkboxname">
-                <label for="checkboxname" for="checkbox" class="checkbox_label">
+                <label for="checkboxname" class="checkbox_label">
                     Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox_link">Условия договора</a>
                 </label>
                 <button type="submit" class="btn3">Отправить</button>
